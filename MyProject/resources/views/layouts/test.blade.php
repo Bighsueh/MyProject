@@ -13,9 +13,11 @@
 
 <head>
 
+
+<body>
 <!--navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand easy-sidebar-toggle font2" href="#">NFU選課系統</a>
+  <a class="navbar-brand font2" href="#">NFU選課系統</a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -53,36 +55,4 @@
 
 
 
-<!--sidebar-->
-<nav class="navbar navbar-inverse easy-sidebar">
-  <div class="container-fluid"> 
-    <div class="navbar-header">
-       <!--easy-sidebar-toggle-right -->
-	   
-      <button type="button" class="navbar-toggle easy-sidebar-toggle" aria-expanded="false"> 
-        <span class="sr-only">Toggle navigation</span> 
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a> 
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
-
-
-<script>
-//easy-sidebar-toggle-right
-$('.easy-sidebar-toggle').click(function(e) {
-    e.preventDefault();
-   //$('body').toggleClass('toggled-right');
-    $('body').toggleClass('toggled');
-   //$('.navbar.easy-sidebar-right').removeClass('toggled-right');
-    $('.navbar.easy-sidebar').removeClass('toggled');
-});
-</script>
+</body>

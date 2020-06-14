@@ -8,7 +8,7 @@ class MainController extends Controller
 {
     public function gonwei()
     {
-        return view('layouts/master');
+        return view('layouts/welcome');
     }
     public function gonwei2()
     {

@@ -7,10 +7,16 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      *
-     * @return void
+     *@return void
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        DB::table('user')->delete();
+
+        user::create([
+            'id' => '1234',
+            'password' => '1234567',
+        ]);
+        $this->call('DatabaseSeeder');
     }
 }

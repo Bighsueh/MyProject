@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         DB::table('user')->delete();
 
-        user::create([
+        User::create([
             'id' => '1234',
             'password' => '1234567',
         ]);

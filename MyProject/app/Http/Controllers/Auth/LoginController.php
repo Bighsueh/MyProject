@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 use DB;
 
 class LoginController extends Controller
@@ -34,15 +35,33 @@ class LoginController extends Controller
      *
      * @return void
      */
+
+     //return view('');
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
     }
-    public function login()
+    public function login(Request $request)
     {
-        //$result = DB::select('SELECT * FROM students WHERE id=? AND password=?',[$_POST['student_id'],$_POST['password']]);
-
-        //var_dump($result) ;
-        return $_POST['student_id'];
+        //$result = DB::select('SELECT * FROM user WHERE id = ? AND password = ?',$_POST['student_id'],$_POST['password']);
+        $user = $request["student_id"];
+        $pw = $request["password"];
+        $result = DB::table('user')
+                    ->where('id','=',$user)
+                    ->where('password','=',$pw)
+                    ->value('id');
+        
+        
+        if(isset($result))
+        {
+            return view('layouts.main');
+        }
+        else
+        {
+            return view('layouts.welcome');
+        }
+        //return $result->pluck('id') ; //回傳找到的user id
+        // return $_POST['student_id'];
     }
+
 }

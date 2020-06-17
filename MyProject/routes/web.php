@@ -13,16 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'maincontroller@gonwei');
-Route::get('/2', 'maincontroller@gonwei2');
-Route::get('/test', 'maincontroller@test');
-
+Route::get('/', 'maincontroller@start');
 
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 #登入
-Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::get('login', 'maincontroller@start')->name('login');
 Route::post('login', 'Auth\LoginController@login');
 #登出
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');

@@ -58,7 +58,7 @@ class LoginController extends Controller
         }
         else
         {
-            return view('layouts.welcome');
+            return route('welcome');
         }
         //return $result->pluck('id') ; //回傳找到的user id
         // return $_POST['student_id'];

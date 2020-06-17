@@ -8,3 +8,8 @@
     font-size: 36px;
 }
 .font3{font-size:380px;color:white;text-align:center;}
+
+.half-table-width
+{
+    max-width: 10px;
+}

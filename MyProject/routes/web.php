@@ -21,12 +21,18 @@ Route::get('/home', 'HomeController@index')->name('home');
 #登入
 Route::get('login', 'maincontroller@start')->name('login');
 Route::post('login', 'Auth\LoginController@login');
-Route::get('main', 'Auth\LoginController@main');
+
 #登出
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('addc','AddCourseController@n');
 Route::post('addc','AddCourseController@add')->name('addc');
+#navbar功能
+Route::get('main', 'MainController@main');
+Route::get('class_search', 'MainController@class_search');
+Route::get('department_search', 'MainController@department_search');
+Route::get('school_search', 'MainController@school_search');
+
 /*
 #註冊
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');

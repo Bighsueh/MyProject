@@ -12,13 +12,13 @@
       </li>
 	  <!--span class="sr-only">(current)</span-->
 	  <li class="nav-item">
-        <a class="nav-link font1" href="#">本班課程查詢</a>
+        <a class="nav-link font1" href="/class_search">本班課程查詢</a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link font1" href="#">本系課程查詢</a>
+        <a class="nav-link font1" href="/department_search">本系課程查詢</a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link font1" href="#">本校課程查詢</a>
+        <a class="nav-link font1" href="/school_search">本校課程查詢</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

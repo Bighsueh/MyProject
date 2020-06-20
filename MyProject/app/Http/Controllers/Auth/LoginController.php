@@ -78,24 +78,6 @@ class LoginController extends Controller
         //return $result->pluck('id') ; //回傳找到的user id
         // return $_POST['student_id'];
     }
-    public function main()
-    {
-        $search_c = DB::table('student_selected')
-            //->where('student_selected.student_id','=',$result)
-            ->join('course','student_selected.course_id','=','course.id')
-            ->orderBy('period','asc')
-            ->orderBy('day','asc')
-            ->get();
-        $search_t = DB::table('student_selected')
-            //->where('student_selected.student_id','=',$result)
-            ->join('course','student_selected.course_id','=','course.id')
-            ->join('class','course.class','=','class.classid')
-            ->orderBy('name','asc')
-            ->orderBy('period','asc')
-            ->get();
-        //dd($search_t);
-        return view('layouts.main')->with('sch',$search_c)->with('scht',$search_t);
-    }
 
 
 }

@@ -21,8 +21,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 #登入
 Route::get('login', 'maincontroller@start')->name('login');
 Route::post('login', 'Auth\LoginController@login');
+Route::get('main', 'Auth\LoginController@main');
 #登出
-Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+
+Route::get('addc','AddCourseController@n');
+Route::post('addc','AddCourseController@add')->name('addc');
 /*
 #註冊
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand font2" href="#">NFU選課系統</a>
-  
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,12 +8,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item "> <!--當前頁面加上active-->
-        <a class="nav-link font1" href="#">預選課表查詢</a>
+        <a class="nav-link font1" href="/main">預選課程列表</a>
       </li>
 	  <!--span class="sr-only">(current)</span-->
-      <li class="nav-item">
-        <a class="nav-link font1" href="#">預選課程列表</a>
-      </li>
 	  <li class="nav-item">
         <a class="nav-link font1" href="#">本班課程查詢</a>
       </li>
@@ -29,7 +26,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">平台維護：電算中心系統設計組</a>
-          <a class="dropdown-item" href="#">Copyright ©國立虎尾科技大學(National Formaosa University)</a>          
+          <a class="dropdown-item" href="#">Copyright ©國立虎尾科技大學(National Formaosa University)</a>
         </div>
       </li>
       <!--li class="nav-item">
